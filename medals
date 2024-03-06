@@ -1,0 +1,32 @@
+import java.util.*;
+
+class HelloWorld {
+    public static void main(String[] args) {
+        HashMap<Integer,String>output=new HashMap<>();
+        HashMap<Integer,Integer>map=new HashMap<>();
+        map.put(1,76);
+        map.put(2,80);
+        map.put(3,98);
+        map.put(4,90);
+        map.put(5,79);
+        System.out.println(map);
+        
+        for(Integer k:map.keySet()){
+            
+            int v=map.get(k);
+            if(70<=v && v<80)
+                output.put(k,"bronze");
+                
+            else if(80>=v && v<90)
+                output.put(k,"silver");
+            
+            else if(v>=90)
+                output.put(k,"gold");
+            
+            
+            
+            
+        }
+        System.out.println(output);
+    }
+}
