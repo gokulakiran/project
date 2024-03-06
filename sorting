@@ -1,0 +1,28 @@
+import java.util.*;
+
+class HelloWorld {
+    public static void main(String[] args) {
+       String[] list={"Monday","church","police","car","stop","Ten"};
+       ArrayList<String> word=new ArrayList<String>();
+       for(String words:list){
+           word.add(words);
+           
+       }
+       Collections.sort(word);
+      
+       int size=word.size()/2;
+       for(int i=0;i<word.size();i++){
+           if (i<size){
+               word.set(i,word.get(i).toUpperCase());
+           }
+            else{
+                word.set(i,word.get(i).toLowerCase());
+               
+            }
+               
+           }
+           System.out.println(word);
+       }
+}
+       
+    
